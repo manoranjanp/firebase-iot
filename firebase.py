@@ -1,13 +1,16 @@
+#!/usr/bin/python
+# easy_install or Pip install requests and serial package before running the programm
+
 import serial
 import time
 import requests
 import json
 
 #Import Firebase URL
-firebase_url = ''
+firebase_url = '' #<- Enter the URL of created FireBase API
  
 #Connect to Serial Port for communication
-ser = serial.Serial('COM15', 9600, timeout=0)
+ser = serial.Serial('', 9600, timeout=0) #<-Enter the Port Add. between ' ' to which Arduino is connected 
  
 #Setup a loop to send Temperature values at fixed intervals
 
@@ -24,7 +27,7 @@ while 1:
   date_mmddyyyy = time.strftime('%d/%m/%Y')
  
  #Current location name
-  temperature_location = 'Gujarat-Ahmedabad';
+  temperature_location = ''; #<- Enter Location
  
   print temperature_c + ',' + time_hhmmss + ',' + date_mmddyyyy + ',' + temperature_location
  
