@@ -1,0 +1,8 @@
+Root
+|—- Location 1
+|—- Temperature Record 1 (Temperature Reading, Date, Time) |—- Temperature Record 2 (Temperature Reading, Date, Time) |—- .....
+|—- Temperature Record N (Temperature Reading, Date, Time) |—- Location 2
+
+......
+
+|—- Location N
